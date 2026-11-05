@@ -83,3 +83,22 @@ $$\xrightarrow{\quad \text{READ} \;\to\; \text{WRITE},\; \text{MOVE} \quad}$$
            ▼     │
       (( Search )) ─── b → Y, L ──► (( Next State ))
                       (found 'b'!)
+```
+
+### 🧠 The Big Theorems
+
+* **Church-Turing Thesis:**  
+  Any algorithm that can be computed by *any* computer (supercomputer, quantum computer, Java) can also be computed by a Turing Machine.
+* **The Halting Problem (Turing's Proof):**  
+  It is mathematically impossible to write a program that determines whether an arbitrary Turing machine will halt (finish) or loop forever on a given input. **The problem is Undecidable.**
+
+---
+
+## 🚨 Flashcard / Mental Traps to Avoid
+
+1. **"Can an NFA compute things a DFA can't?"**  
+   $\rightarrow$ **NO.** Kleene's theorem proves they are identical in expressive power.
+2. **"Does a Turing machine have an infinite number of states?"**  
+   $\rightarrow$ **NO.** The states are **finite**. The *tape* is infinite.
+3. **"Does $A \le B$ mean $A$ is harder than $B$?"**  
+   $\rightarrow$ **NO.** It means $A$ reduces to $B$, which means **$B$ is at least as hard as $A$**.
